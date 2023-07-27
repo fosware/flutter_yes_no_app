@@ -11,9 +11,10 @@ class ChatProvider extends ChangeNotifier {
 
   List<Message> messageList = [
     Message(
-      text: '¡Conoce tu futuro!\nEscribe tu pregunta, la respuesta seará: Si o No', 
+      text: '¡Conoce tu futuro!\nEscribe tu pregunta, la respuesta será: Si o No', 
       fromWho: FromWho.notMe, 
-      imageUrl: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1255635032%2Fvector%2Fdoodle-sketch-question-marks-set-inside-speech-bubbles.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DMUO3m5gx33HeX68MGzlULDKos_96l3BHd4zMmOmGmUo%3D&sp=1690483002Tcfd03ef7e657776578cc0a44f1e1bcbbdd00fa55d9591c1a837da7fd5e1ba83f' ,//'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTNQkl4J_FjVQPRiRJIvniX0WGKXd-vZc23N8T4QcDn1BebYxUX%26s&sp=1690482213T862b5b0e962afc3506396353d779921e4b80bb24473c0bc84f3501aef7ac4cf4',
+      imageUrl: 'https://awisdomwithin.files.wordpress.com/2018/10/817-181521.jpg',
+      //'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1255635032%2Fvector%2Fdoodle-sketch-question-marks-set-inside-speech-bubbles.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DMUO3m5gx33HeX68MGzlULDKos_96l3BHd4zMmOmGmUo%3D&sp=1690483002Tcfd03ef7e657776578cc0a44f1e1bcbbdd00fa55d9591c1a837da7fd5e1ba83f' ,//'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTNQkl4J_FjVQPRiRJIvniX0WGKXd-vZc23N8T4QcDn1BebYxUX%26s&sp=1690482213T862b5b0e962afc3506396353d779921e4b80bb24473c0bc84f3501aef7ac4cf4',
     ),
     //Message(text: '', fromWho: FromWho.me),
   ];
@@ -24,7 +25,7 @@ class ChatProvider extends ChangeNotifier {
     messageList.add(newMessage);
 
     if(text.endsWith('?')) {
-      notMeRepy();
+      await notMeRepy();
     }   
     
     notifyListeners();

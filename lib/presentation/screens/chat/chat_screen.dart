@@ -17,7 +17,8 @@ class ChatScreen extends StatelessWidget {
           padding: EdgeInsets.all(2),
           child: CircleAvatar(
             backgroundImage: NetworkImage(              
-              'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimages.vexels.com%2Fmedia%2Fusers%2F3%2F200872%2Fisolated%2Flists%2Ff2c6cdae6e63a73d685bac6d72285308-dibujado-a-mano-color-concha.png&sp=1690480893T228310a775c0d810100c461c49926cb3775f22acb6be1b78a97696f982458ecd',
+              //'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimages.vexels.com%2Fmedia%2Fusers%2F3%2F200872%2Fisolated%2Flists%2Ff2c6cdae6e63a73d685bac6d72285308-dibujado-a-mano-color-concha.png&sp=1690480893T228310a775c0d810100c461c49926cb3775f22acb6be1b78a97696f982458ecd',
+              'https://w7.pngwing.com/pngs/700/764/png-transparent-seashell-sea-snail-conch-blue-marine-mammal-3d-computer-graphics.png',
             ),
           ),
         ),
